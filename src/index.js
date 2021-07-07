@@ -58,6 +58,9 @@ const oidc = new Provider(`https://${process.env.HEROKU_APP_NAME}.herokuapp.com`
   features: {
     // disable the packaged interactions
     devInteractions: { enabled: false },
+    registration: {
+      enabled: true
+    }
   },
 });
 
